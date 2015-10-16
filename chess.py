@@ -47,6 +47,14 @@ def turn(player):
   print mp1[1]
   print mp2[0]
   print mp2[1]
+    
+# A function to print the board
+def print_board():
+    for i in range(0, 8):
+        for j in range(0, 8):
+            print board[i][j] + ' |',
+        print ''
 
-cls()
+print_board()
 turn(first_player)
+
